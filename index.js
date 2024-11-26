@@ -16,7 +16,7 @@ closeModal.addEventListener("click", () => {
 // Fechar o modal ao clicar fora do conteúdo
 window.addEventListener("click", (event) => {
   if (event.target === modal) { // target: se refere ao elemento que foi realmente clicado. 
-    modal.style.display = "none"; // serve para esconder o modal "o fundo escuro fora do conteúdo"
+    modal.style.display = "none"; // serve para esconder o modal quando clicado "o fundo escuro fora do conteúdo"
   }
 });
 
