@@ -1,0 +1,133 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #181719;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Botão de Abrir Modal */
+.btn {
+  background-color: #6f44ff;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5835cc;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #181719;
+  border: 2px solid #38b6ff;
+  padding: 60px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #38b6ff;
+  border-radius: 5px;
+  background-color: #282828;
+  color: #fff;
+}
+
+.modal-content input::placeholder {
+  color: #bbb;
+}
+
+/* Botão de Fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #ff4d4d;
+}
+
+/* Responsividade */
+/* ------------------- */
+
+/* Para dispositivos menores que 768px (Smartphones e telas pequenas) */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 30px; /* Reduz o espaçamento interno */
+    width: 95%; /* O modal ocupa mais espaço da tela */
+  }
+
+  .modal-content h2 {
+    font-size: 16px; /* Reduz o tamanho do texto */
+  }
+
+  .modal-content input {
+    padding: 8px; /* Reduz o espaçamento interno dos inputs */
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px; /* Tamanho menor no botão */
+    padding: 10px 15px;
+  }
+}
+
+/* Para dispositivos menores que 480px (Telas muito pequenas) */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+    width: 100%; /* Modal ocupa toda a largura da tela */
+  }
+
+  .modal-content h2 {
+    font-size: 14px; /* Texto ainda menor */
+  }
+
+  .modal-content input {
+    font-size: 12px;
+    padding: 6px; /* Inputs mais compactos */
+  }
+
+  .btn {
+    font-size: 12px; /* Botão menor */
+    padding: 8px 12px;
+  }
+}

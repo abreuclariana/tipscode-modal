@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal com HTML, CSS e JS</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Botão para abrir o modal -->
+  <button id="openModal" class="btn">Quero me inscrever no FST</button>
+
+  <!-- Estrutura do modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close"></span>
+      <h2>Programador(a), preencha os campos abaixo para prosseguir para o FST.</h2>
+      <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="DDD + telefone" required>
+        <button type="submit" class="btn">Quero me inscrever no FST</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
